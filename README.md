@@ -2,7 +2,7 @@
 
 # TeleSpy
 
-**TeleSpy** is a powerful and user-friendly CLI tool designed for OSINT (Open Source Intelligence) and cybersecurity professionals. It enables efficient scraping of usernames, text messages, and channel names from Telegram. Ideal for gathering and analyzing open-source intelligence, TeleSpy helps you stay ahead in the ever-evolving landscape of cyber threats.
+**TeleSpy** is a powerful and user-friendly CLI tool designed for OSINT (Open Source Intelligence) collection across Telegram. It enables efficient scraping of usernames, text messages, and channel names from Telegram. With Telegram being so popular amongst the cyber criminal underground, TeleSpy is the go-to tool for exploring the dark corners of the instant messaging platform.
 
 ## Features
 
