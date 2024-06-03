@@ -55,7 +55,6 @@ Example: python telespy.py --api-id 123456 --api-hash abcdef1234567890 --phone +
 
 """
 
-
 import argparse
 import logging
 import json
@@ -66,7 +65,7 @@ from telethon.tl.types import PeerChannel
 logging.basicConfig(level=logging.INFO)
 
 # Function to scrape a Telegram channel
-def scrape_telegram(api_id, api_hash, phone, channel_name, output_file):
+def scrape_telegram(api_id, api_hash, phone, channel_name, output_file, verbose):
     # Initialize the Telegram client
     client = TelegramClient('session_name', api_id, api_hash)
 
@@ -99,6 +98,13 @@ def scrape_telegram(api_id, api_hash, phone, channel_name, output_file):
         
         logging.info(f"Scraped data: {data}")
 
+    if verbose:
+        print("TeleSpy is now running...")
+        print(f"Scraping messages from Telegram channel: {channel_name}")
+        print(f"Outputting results to file: {output_file}")
+    else:
+        print("TeleSpy is now running in silent mode. Use -v to see TeleSpy's processes.")
+
     # Start listening to the channel
     client.run_until_disconnected()
 
@@ -108,8 +114,9 @@ if __name__ == '__main__':
     parser.add_argument('--api-hash', type=str, required=True, help='Telegram API Hash')
     parser.add_argument('--phone', type=str, required=True, help='Your phone number associated with Telegram')
     parser.add_argument('--channel', type=str, required=True, help='Telegram channel name or ID to scrape')
-    parser.add_argument('--output', type=str, required=True, help='Output file for scraped data')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Print scraped data to terminal instead of saving to a file')
+    parser.add_argument('--output', type=str, help='Output file for scraped data')
+    parser.add_argument('-v', '--verbose', action='store_true', help='Display running processes of TeleSpy')
     args = parser.parse_args()
 
-    scrape_telegram(args.api_id, args.api_hash, args.phone, args.channel, args.output)
+    scrape_telegram(args.api_id, args.api_hash, args.phone, args.channel, args.output, args.verbose)
+
