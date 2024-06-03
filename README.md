@@ -66,7 +66,7 @@ We welcome contributions to improve TeleSpy! Please fork the repository and subm
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any questions or issues, please open an [issue]( on GitHub or contact us at connect@mayanstegmann.com.
+For any questions or issues, please open an [issue](https://github.com/K3ySton3-ZA/TeleSpy/issues) on GitHub or contact us at connect@mayanstegmann.com.
 
 ---
 Enjoy using TeleSpy for your OSINT and cybersecurity needs!
