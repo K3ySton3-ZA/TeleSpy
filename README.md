@@ -68,7 +68,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 For any questions or issues, please open an issue on GitHub or contact us at connect@mayanstegmann.com.
 
---
+---
 Enjoy using TeleSpy for your OSINT and cybersecurity needs!
 
 
