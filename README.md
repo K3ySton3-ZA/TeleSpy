@@ -51,6 +51,7 @@ python telespy.py --api-id YOUR_API_ID --api-hash YOUR_API_HASH --phone YOUR_PHO
 - --phone: Your phone number associated with Telegram (required)
 - --channel: Telegram channel name or ID to scrape (required)
 - --output: Output file for scraped data (required)
+- --use-session: Use an existing session file for authentication instead of requiring you to enter your phone number and verification code. If this file does not exist, TeleSpy will create one after first successful authentication.
 
 ### Example
 ```
