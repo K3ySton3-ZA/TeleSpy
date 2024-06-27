@@ -66,7 +66,7 @@ python telespy.py --api-id 123456 --api-hash abcdef1234567890 --phone +123456789
 We welcome contributions to improve TeleSpy! Please fork the repository and submit pull requests.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For any questions or issues, please open an [issue](https://github.com/K3ySton3-ZA/TeleSpy/issues) on GitHub or contact us at connect@mayanstegmann.com.
